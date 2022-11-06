@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container{
+    margin: 1em;
+}
+
+table {
+    margin: auto;
+    max-width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table tr:first-child {
+    border-top: none;
+    color: #fff;
+  }
+  
+  /*table tr {}*/
+  
+  /*table tr:nth-child(odd):not(:first-child) {}*/
+  
+  table th {
+    display: none;
+  }
+  
+  table td {
+    display: block;
+  }
+  
+  table td:first-child {
+    margin-top: .5em;
+  }
+  
+  table td:last-child {
+    margin-bottom: .5em;
+  }
+  
+  table td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    width: 160px;
+    display: inline-block;
+    color: #000;
+  }
+  
+  table th,
+  table td {
+    text-align: left;
+  }
+  
+  table {
+    color: #333;
+    border-radius: .4em;
+    overflow: hidden;
+  }
+  
+  table tr {
+    border-color: #dee2e6;
+  }
+  
+  table th,
+  table td {
+    padding: .5em 1em;
+    border: 1px solid #dee2e6;
+  }
+  @media screen and (max-width: 3001px) {
+    table tr:nth-child(2) {
+      border-top: none;
+    }
+  }
+  @media screen and (min-width: 3000px) {
+    table tr:hover:not(:first-child) {
+      background-color: #d8e7f3;
+    }
+    table td:before {
+      display: none;
+    }
+    table th,
+    table td {
+      display: table-cell;
+      padding: .25em .5em;
+    }
+    table th:first-child,
+    table td:first-child {
+      padding-left: 0;
+    }
+    table th:last-child,
+    table td:last-child {
+      padding-right: 0;
+    }
+    table th,
+    table td {
+      padding: 1em !important;
+    }
+  }
+  
+input[type=submit] {
+    display: block;
+    padding: 1em;
+    margin: 1.5em auto 1em;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background-color: #25d366;
+    border: 2px solid #16be55;
+    cursor: pointer;
+}
+
+footer p {
+    text-align: center;
+    padding-bottom: 2.5em;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #666;
+}
